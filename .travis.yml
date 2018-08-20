@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: YklwYt2KzVam2oJ0WZ2szUa2f++oUYK3ksAyMFItYNuOmuXAV1suoXNEac6G/mGXZSgSzLuzdR8LIItIiJ9uBeAZz+YSMVwRJbsfk4/HmmIYQrf0bdQs8Yrx2VuUzzpDJdC9wtLayqDftLcpzZieH6/i4vBnG3dQ2ETlKUvPWiT1eDUd7t8LcoAvX+viTqtZA0J4fuRcyzAGJqVsHTcoUN5/qAM8svV7C6PwYXsdTnDqa1Kn54I87cIIqoHAdSgeH03OiiQ8tQMmzIQ7ucWiSR47VQrqJ528fyNhDqpzPUOn8UhTcN5Rsl/7j7nLtMqPpquGPYjX8nv9TdzVzkMusL2kGKkTiLY0Ozv11LKrUGUcatzLHKIzE+nOYoYWFsFn1xpooq6MLaRwRyAl7RaZTdYV1I7TWxTbiEBa4hsnxbmwdgIz24c+safl9azCgvG1zTcaaVdNMBc/yusJKRp+H5ALVOFQ29cPANj0bmxZlAoNz1CDLpuaXG78BZRHt3ETgHm2R1s8Y+QV+g9BXUEyZnCiDfd3HXtwlPS/bz3grs5baAAvcQeB06+/19MaTFj3UhWR+MynIfsDFBBoK7962pKYrt1kP3Pnx0XubRboSevbCDg65A0NvjTomMk3Wq/rjmIBHLsnRuSp9FyFf884IxE4bxnx2bx+s7RCW5XnwUM=
+  app: shielded-dusk-14925
+  on:
+    repo: kmlamthinkful/reacthotcoldtestchallenge
